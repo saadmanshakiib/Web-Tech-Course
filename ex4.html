@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Multiple Choice Example</title>
+</head>
+<body>
+    <form action="/process-preferences" method="POST">
+<h2>Subscription Customization</h2>
+<!-- Radio Group: Shared name="billing" limits selection to exactly ONE -->
+<div>
+<h3>Select Billing Cycle:</h3>
+<input type="radio" id="bill-month" name="billing" value="monthly">
+<label for="bill-month">Monthly ($10/mo)</label>
+<br>
+<input type="radio" id="bill-year" name="billing" value="yearly">
+<label for="bill-year">Annual ($90/yr)</label>
+</div>
+<!-- Checkboxes: Shared name="addons" allows choosing zero, one, or ALL -->
+<div>
+<h3>Select Optional Add-ons:</h3>
+<input type="checkbox" id="add-sms" name="addons" value="sms_alerts">
+<label for="add-sms">SMS Notifications</label>
+<br>
+<input type="checkbox" id="add-beta" name="addons" value="beta_access">
+<label for="add-beta">Early Beta Feature Access</label>
+</div>
+<!-- Dropdown Selector and Options -->
+<div>
+<h3>Support Tier:</h3>
+<label for="support-tier">Choose your tier:</label>
+<select id="support-tier" name="tier">
+<!-- Standard value attributes pass clean strings to the backend -->
+<option value="standard">Standard Web Support</option>
+<option value="priority">Priority Phone Support</option>
+<option value="enterprise">Dedicated 24/7 Account Manager</option>
+</select>
+</div>
+<br><br>
+<button type="submit">Save Preferences</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Structural Elements Example</title>
+</head>
+<body>
+<!-- Data will target a search processing file via a secure POST method -->
+<form action="/search-processor.php" method="POST">
+<h2>System Database Search</h2>
+<div>
+</div>
+<!-- The 'for' attribute binds seamlessly to the input 'id' -->
+<label for="search-query">Enter Search Keywords:</label>
+<input type="text" id="search-query" name="query">
+<br><br>
+<!-- Three distinct button variations -->
+<div>
+<!-- Submits the form data -->
+<button type="submit">Execute Search</button>
+<!-- Completely wipes all entered data instantly -->
+<button type="reset">Clear Fields</button>
+<!-- Neutral button: Does nothing until you attach JavaScript -->
+<button type="button" onclick="alert('Help helper triggered!')">Help</button>
+</div>
+</form>
+</body>
+</html>

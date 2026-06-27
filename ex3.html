@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Registration Form</title>
+</head>
+<body>
+<form action="/register-endpoint" method="POST">
+<h2>Create an Account</h2>
+<!-- Section 1: Personal Data -->
+<fieldset>
+<legend>Personal Information</legend>
+<p>
+</p>
+<label for="first-name">First Name:</label>
+<input type="text" id="first-name" name="firstName" required>
+<p>
+</p>
+</fieldset>
+<label for="birth-date">Date of Birth:</label>
+<input type="date" id="birth-date" name="dob">
+<br>
+<!-- Section 2: Account Security -->
+<fieldset>
+<legend>Security</legend>
+<p>
+<label for="username">Username:</label>
+<input type="text" id="username" name="username" required>
+</p>
+</fieldset>
+<br>
+<button type="submit">Register</button>
+</form>
+</body>
+</html>

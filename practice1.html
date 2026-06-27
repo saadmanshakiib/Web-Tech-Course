@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>First Practice</title>
+    </head>
+    <body>
+        <div class="overall-container">
+            <h3>Skill Summary Box</h3>
+
+            <section id="user-info">
+                <input 
+                type="text" 
+                placeholder="Enter Your Name"
+                id="name-input"
+                name="username">
+                    <br><br>
+                <input
+                type="password"
+                placeholder="Enter Your Password"
+                name="userpassword">
+
+            </section>
+
+                <section id="academic-info">
+                        <p>
+                            <label for="study">Choose Your Completed Study Levels</label>
+                        </p>
+
+                        <input type="checkbox" id="ssc" name="ssc" value="Secondary School Certificate">Secondary School Certificate <br>
+                        <input type="checkbox" id="hsc" name="hsc" value="Higher Secondary  Certificate"> Higher Secondary  Certificate <br>
+                        <input type="checkbox" id="hons" name="hons" value="Bsc">Bsc <br>
+                        <input type="checkbox" id="masters" name="masters" value="Masters">Msc <br>
+                        <input type="checkbox" id="phd" name="phd" value="Phd"> Phd<br>
+
+                        <p><label for="current-study">Choose Your Current Level Of Study : </label></p>
+
+                        <select id="current-study" name="current-study">
+
+                            <option value="null"></option>
+                            <option value="SSC">SSC</option>
+                            <option value="HSC">HSC</option>
+                            <option value="Bsc">Bsc</option>
+                            <option value="Msc">Msc</option>
+                            <option value="Phd">Phd</option>
+
+                        </select>
+
+                </section>
+                    <br>
+                <button type="Submit">Submit</button>
+
+        </div>
+    </body>
+</html>

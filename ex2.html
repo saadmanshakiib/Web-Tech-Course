@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Primary Data Inputs Example</title>
+</head>
+<body>
+<!-- CRITICAL: multipart/form-data is active to allow file streams -->
+<form action="/submit-profile" method="POST" enctype="multipart/form-data">
+<h2>Job Applicant Profile</h2>
+<p>
+</p>
+<label for="full-name">Full Name:</label>
+<input type="text" id="full-name" name="fullName">
+<p>
+</p>
+<label for="secure-pass">Account Password:</label>
+<input type="password" id="secure-pass" name="password">
+<p>
+</p>
+<label for="user-email">Contact Email:</label>
+<input type="email" id="user-email" name="email">
+<p>
+</p>
+<label for="years-exp">Years of Experience:</label>
+<input type="number" id="years-exp" name="experience" min="0" max="50">
+<p>
+</p>
+<label for="start-date">Available Start Date:</label>
+<input type="date" id="start-date" name="startDate">
+<p>
+<label for="cover-letter">Cover Letter Introduction:</label><br>
+<textarea id="cover-letter" name="coverLetter" rows="6"
+cols="50"></textarea>
+</p>
+<p>
+</p>
+<label for="resume-doc">Upload Certified Resume (PDF only):</label>
+<input type="file" id="resume-doc" name="resume" accept=".pdf">
+<button type="submit">Submit Profile</button>
+</form>
+</body>
+</html>
