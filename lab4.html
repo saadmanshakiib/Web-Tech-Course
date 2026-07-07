@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <script src="lab4.js"></script>
+  </head>
+  <body>
+    <!-- <script>
+      document.write("<h1>Hello worldddd</h1>");
+      console.log("Hello world from html");
+      alert("Hello world from html");
+    </script> -->
+        <fieldset>
+      <legend>Student Information</legend>
+        <form onsubmit="return onSubmitForm()">
+             <table>
+        <tr>
+          <td>
+            Full Name (Text) </br>
+            <input type="text" id="name" placeholder="Enter your full name" />
+          </td>
+          <td>
+            Email Address </br>
+            <input type="email" id="email" placeholder="Enter your email address" />
+          </td>
+           <td>
+           </br>
+            <button type="submit" onclick="return handleClick()">Submit</button>
+          </td>
+        </tr>
+        <tr>
+            <td><p id="nameError" style="color:red"></p></td>
+            <td><p id="emailError"  style="color:red"></p></td>
+        </tr>
+      </table>
+        </form>
+     
+    </fieldset>
+  </body>
+</html>
+ 
+ 
+ 
+ 
